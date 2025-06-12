@@ -20,7 +20,8 @@ SOURCES += \
     src/VentanaBase.cpp \
     src/VentanaProducto.cpp\
     src/VentanaProveedor.cpp \
-    src/MainWindow.cpp \ 
+    src/VentanaTransaccion.cpp \
+    src/MainWindow.cpp \
     src/Producto.cpp \  
     src/ProductoElectronico.cpp \  
     src/ProductoPerecedero.cpp \  
@@ -31,7 +32,8 @@ SOURCES += \
 HEADERS += \
     include/VentanaBase.h \ 
     include/VentanaProducto.h \ 
-    include/VentanaProveedor.h \ 
+    include/VentanaProveedor.h \
+    include/VentanaTransaccion.h \
     include/MainWindow.h \
     include/MainWindow.h \
     include/Producto.h \  
