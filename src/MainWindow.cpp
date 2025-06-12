@@ -1,7 +1,7 @@
 #include "MainWindow.h"
 #include "VentanaProducto.h"
 #include "VentanaProveedor.h"
-// #include "VentanaTransaccion.h"
+#include "VentanaTransaccion.h"
 // #include "VentanaReporte.h"
 
 #include <QVBoxLayout>
@@ -59,5 +59,10 @@ void MainWindow::conectarSlots() {
         ventana->show();
     });
 
-    // Puedes agregar conexiones similares para Transacciones y Reportes
+    connect(botonTransacciones, &QPushButton::clicked, this, [=]() {
+        auto* ventana = new VentanaTransaccion(this);
+        ventana->show();
+    });
+
+    // Puedes agregar conexiones similares para Reportes
 }
